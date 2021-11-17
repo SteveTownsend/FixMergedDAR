@@ -1,8 +1,0 @@
-{
-  "Nickname": "LessRareOutfits",
-  "Visibility": "Hidden",
-  "OneLineDescription": "Outfit Analysis and Distribution",
-  "LongDescription": "Analyze OTFT records to determine which are going to show up where. Patch rare ones into NPCs to make sure they have a chance to be visible in-game.",
-  "PreferredAutoVersioning": "Default",
-  "RequiredMods": []
-}
