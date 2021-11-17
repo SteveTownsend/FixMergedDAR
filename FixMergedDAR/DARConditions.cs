@@ -19,7 +19,7 @@ namespace FixMergedDAR
             {
                 // read the contexts of the DAR conditions file and convert any merged plugin names and formids
                 ConditionsPaths.Add(conditionsFile);
-                Console.WriteLine("Checking DAR Conditions file {0}", conditionsFile);
+                Console.WriteLine("---- DAR Conditions file {0}", conditionsFile);
                 using (StreamReader reader = File.OpenText(conditionsFile))
                 {
                     IList<string> buffered = new List<string>();
@@ -90,7 +90,7 @@ namespace FixMergedDAR
                         }
                         if (updatedLine)
                         {
-                            Console.WriteLine("l.{0}\t'{1}' converted to '{2}'", lineNumber, line, newLine);
+                            Console.WriteLine("{0,4} '{1}' converted to '{2}'", lineNumber, line, newLine);
                             buffered.Add(newLine);
                         }
                         else
@@ -105,7 +105,7 @@ namespace FixMergedDAR
                         updatedPath = Program.settings.OutputFolder + updatedPath.Substring(updatedPath.IndexOf("\\"));
                         Directory.CreateDirectory(Path.GetDirectoryName(updatedPath)!);
                         File.WriteAllLines(updatedPath, buffered);
-                        Console.WriteLine("{0} written", updatedPath);
+                        Console.WriteLine("---- {0} written", updatedPath);
                     }
                 }
             }
