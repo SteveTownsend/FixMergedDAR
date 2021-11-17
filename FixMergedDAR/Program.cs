@@ -1,15 +1,8 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using Mutagen.Bethesda;
-using SSEForms = Mutagen.Bethesda.FormKeys.SkyrimSE;
 using Mutagen.Bethesda.Synthesis;
 using Mutagen.Bethesda.Skyrim;
 using System.Threading.Tasks;
-using Noggog;
-using Mutagen.Bethesda.Plugins;
-using Mutagen.Bethesda.Plugins.Order;
-using Mutagen.Bethesda.Cache.Implementations;
 
 namespace FixMergedDAR
 {
