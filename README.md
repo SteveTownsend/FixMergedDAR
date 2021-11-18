@@ -5,6 +5,6 @@ ZMerge always alters the plugin name containing formIDs referenced, and dependin
 
 To be clear, this patcher fixes up your _conditions.txt files if you have ZMerge plugins in your LO. It does not allow you to combine conflicting animations that have the same priority - that's a manual task depending on your preference.
 
-The affected conditions.txt files may or may not be associated with the plugins that you have merged : the issue is that plugin:formid references to merged plugins in any _conditions.txt files are incorrect after the merge.
+The affected \_conditions.txt files may or may not be associated with the plugins that you have merged : the issue is that plugin:formid references to merged plugins in any _conditions.txt files are incorrect after the merge.
 
 For example: I have merged Animated Armoury into a large ZMerge called Weapons And Armour Merged.esp. That breaks its own conditions files, and also any other file from an unmerged mod that references Animated Armoury. The patcher corrects all of these references to Animated Armoury forms.
